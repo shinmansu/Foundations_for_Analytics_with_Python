@@ -235,25 +235,25 @@ print("Output #70: {}".format(a_list[-3]))
 print("Output #71: {}".format(another_list[2]))
 print("Output #72: {}".format(another_list[-1]))
 
-# 리스트 분할하기 
-# 리스트 분할을 사용하여 리스트 원소들의 부분집합 만들기 
-# 맨 앞부터 분할하는 경우, 최초 인덱스를 생략한다. 
-# 맨 뒤까지 리스트를 분할하는 경우, 마지막 인덱스를 생략한다. 
+# 리스트 분할하기
+# 리스트 분할을 사용하여 리스트 원소들의 부분집합 만들기
+# 맨 앞부터 분할하는 경우, 최초 인덱스를 생략한다.
+# 맨 뒤까지 리스트를 분할하는 경우, 마지막 인덱스를 생략한다.
 print("Output #73: {}".format(a_list[0:2]))
 print("Output #74: {}".format(another_list[:2]))
 print("Output #75: {}".format(a_list[1:3]))
 print("Output #76: {}".format(another_list[1:]))
 
 
-# [:]를 이용하여 리스트를 복사하기 
+# [:]를 이용하여 리스트를 복사하기
 a_new_list = a_list[:]
 print("Output #77: {}".format(a_list[:]))
 
-# + 연산자를 이용하여  2개 이상의 리스트를 병합하기 
+# + 연산자를 이용하여  2개 이상의 리스트를 병합하기
 a_longer_list = a_list + another_list
 print("Output #78: {}".format(a_longer_list))
 
-# in과 not in을 이용하여 특정 원소의 리스트 내 포함 여부를 확인하기 
+# in과 not in을 이용하여 특정 원소의 리스트 내 포함 여부를 확인하기
 a = 2 in a_list
 print("Output #79: {}".format(a))
 
@@ -264,11 +264,11 @@ if 2 in a_list:
 b = 6 not in a_list
 if 6 not in a_list:
   print("Output #81: 6 is not in{}".format(a_list))
-  
+
 
 # append() 함수를 이용하여 리스트이 마지막에 원소를 추가하기
 # remove() 함수를 이용하여 리스트 내 특정 원소를 제거하기
-# pop() 함수를 이용하여 리스트의 마지막 원소를 제거하기 
+# pop() 함수를 이용하여 리스트의 마지막 원소를 제거하기
 
 a_list.append(4)
 a_list.append(5)
@@ -284,9 +284,15 @@ print("Output #85: {}".format(a_list))
 
 # reverse()함수를 이용하여 리스트 반전하기
 # 해당 리스트 내에서(인플레이서) 변경이 일어나므로
-# 기존 리스트를 변경하지 않고 반전하려면 먼저 사본을 만들어둬야 한다. 
+# 기존 리스트를 변경하지 않고 반전하려면 먼저 사본을 만들어둬야 한다.
 a_list.reverse()
 print("Output #86: {}".format(a_list))
 a_list.reverse()
 print("Output #87: {}".format(a_list))
 
+# sort() 함수를 이용하여 리스트를 인플레이스로 정렬하기
+# 이는 리스트가 변경된다는 것을 의미한다.
+# 기존 리스트의 변경 없이 리스트를 정렬하려면, 우선 사본을 만든다
+
+unordered_list = [3, 5, 1, 7, 2, 8, 4, 9, 0, 6]
+print("Output #88: {}".format(unordered_list))
